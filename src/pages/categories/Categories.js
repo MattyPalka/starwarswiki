@@ -29,6 +29,8 @@ class People extends Component {
             })
         })
     }
+
+    //make sure that next / previous page is rendered on pagination click
     movePage = () => {
         this.setState({
             ready: false
