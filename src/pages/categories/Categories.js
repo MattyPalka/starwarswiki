@@ -55,12 +55,12 @@ class People extends Component {
                 <div className="row d-flex justify-content-around align-items-stretch">
                     {!this.state.ready ? <Spinner /> :
                         <>
-                            <div className="col-sm-11">
+                            <div className="col-9 col-sm-11">
                                 <div className="row d-flex justify-content-around align-items-stretch">
                                     {this.state.cards}
                                 </div>
                             </div>
-                            <div className="col-sm-1">
+                            <div className="col-3 col-sm-1">
                                 <Pagination movePage={this.movePage} prevLink={`/${this.props.match.params.category}/?${this.state.previousPage}`} nextLink={`/${this.props.match.params.category}/?${this.state.nextPage}`}/>
                             </div>
                         </>

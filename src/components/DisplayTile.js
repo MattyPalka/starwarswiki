@@ -6,7 +6,7 @@ import './DisplayTile.css'
 class DisplayTile extends Component {
     render() {
         return (
-            <div className="col-sm-3 mb-4 display-tile">
+            <div className="col-sm-4 col-md-3 mb-4 display-tile">
                 <Link to={this.props.link}>
                 <div className="card p-3 h-100">
                     <div className="card-title d-flex justify-content-center mt-2 " >
