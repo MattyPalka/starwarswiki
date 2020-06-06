@@ -1,0 +1,15 @@
+.Pagination i {
+    color: #3f3f44;
+}
+
+.Pagination i:hover{
+    color: #f3c623;
+}
+
+.disabled-link {
+    pointer-events: none;
+  }
+.disabled-link i {
+    color: lightgray;
+}
+

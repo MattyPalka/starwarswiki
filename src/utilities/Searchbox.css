@@ -1,0 +1,16 @@
+.searchbox {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.searchbox form {
+    display: flex;
+    justify-content: center;
+}
+
+.searchbox form select {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}

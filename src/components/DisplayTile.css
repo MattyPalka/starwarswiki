@@ -1,0 +1,21 @@
+.card:hover {
+    box-shadow: grey 0px 3px 6px;
+}
+
+.display-tile a {
+    color: #3f3f44;
+    text-decoration: none;
+}
+
+.display-tile a:hover {
+    color: #3f3f44;
+    text-decoration: none;
+}
+.title {
+    font-weight: 700;
+}
+
+.extra-info {
+    font-weight: 300;
+    font-size: small;
+}
