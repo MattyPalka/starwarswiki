@@ -1,3 +1,28 @@
+## App Description
+This project can be seen in production at [sw.mattypalka.usermd.net](http://sw.mattypalka.usermd.net).
+If you want to run it locally clone / download this repo, run npm install to install all packages and use start script explained below.
+
+This is a Star Wars Wiki page based on [SW API](http://swapi.dev/) build in React with React Router.
+
+### What can be done? And how does it work?
+User can navigate through different categories provided by the API and see relevant elements in given category. (e.g. Planets in the the Star Wars Universe).
+
+Selecting any element in the category will provide more details on it, as well as, provide the information in what movie this particular element could be seen.
+
+Similarly in the "Films" category, after selecting particular movie the user is able to see characters, planets and starships that were in the movie. Selecting any of those items will bring the user straight to it's detailed page.
+
+#### Searching
+User is able to search for particular universe element. Searchbar is always present on top of the app, there the user can select the category that they want to search in and they can provide a search query (i.e. name of character or vechicle). Searching will return all items relevant to the query.
+
+If no search query is provided, the user will be presented with entire selected category.
+
+#### Navigation 
+If there are more than 10 items relevant to the search / category, the user has access to up and down arrows on the right side of the screen. Clicking on them will navigate to previous / next search pages respectively.
+
+User can also navigate straight to given item if they know the direct URL to them 
+
+----
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
