@@ -12,8 +12,12 @@ class Films extends Component {
 
     componentDidMount() {    
         axios.get(`https://swapi.dev/api${this.props.match.path}/${this.props.location.search}`).then((res) => {
+            
             let cards = res.data.results.map((item, key) => {
-                return <DisplayTile key={key} link={`${this.props.match.path}/${item.episode_id}`} name={item.title} extraInfo={`${item.opening_crawl.slice(0, 200)}...`} />
+                // Grab DB id from the URL, as API's 'episode_id' is not aligned with DB id
+                let apiUrlArray = item.url.split('/')
+                let id = apiUrlArray[apiUrlArray.length - 2]
+                return <DisplayTile key={key} link={`${this.props.match.path}/${id}`} name={item.title} extraInfo={`${item.opening_crawl.slice(0, 200)}...`} />
             })
             this.setState({
                 cards: cards,
